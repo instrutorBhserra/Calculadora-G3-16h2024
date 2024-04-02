@@ -1,0 +1,61 @@
+html{
+    background-color: #111;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+body{
+    background-color: darkgreen;
+    text-align: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0px;
+}
+/* Table rules */
+table{
+    height: 100%;
+    aspect-ratio: 5/8;
+}
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+/* Row rules */
+table>tbody>tr{
+    width: 100%;
+    aspect-ratio: 5;
+}
+table>tbody>tr>*{
+    width: 20%;
+    aspect-ratio: 1;
+}
+/* Table cells */
+table td{
+    background-color: whitesmoke;
+}
+/* Highlighted items */
+table tr:first-child{
+    background-color: indigo;
+}
+table tr:not(:first-child, :last-child)>td:first-child{
+    background-color: blue;
+    font-weight: bold;
+}
+/* Table cells sub items */
+table>tbody>tr>td>*{
+    background-color: black;
+    color:white;
+    height: 100%;
+    width: 100%;
+}
+table>tbody>tr>td>input{
+    text-align: center;
+    font-size: 1.1em;
+}
+table>tbody>tr>td>button{
+    font-size: 1.2em;
+}
+.entryRow td:not(:first-child){
+    color: black;
+}
